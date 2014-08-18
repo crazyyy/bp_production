@@ -1,0 +1,1031 @@
+/*
+Theme Name: 	HTML5 Blank
+Theme URI: 		http://html5blank.com
+Description: 	Здравствуйте! Если нужно что-то подправить, добавить или отверстать новую тему - обращайтсь icq 633308800 или aparserok@gmail.com
+Version: 		1.2.6
+Author: 		aparserok
+Author URI: 	http://saitobaza.ru/
+Tags: 			HTML5, CSS3
+
+License:	MIT
+License URI:	http://opensource.org/licenses/mit-license.php
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+	height: 100%;
+}
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/OpenSans-Bold-webfont.eot');
+    src: url('fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('fonts/OpenSans-Semibold-webfont.eot');
+    src: url('fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: 'open_sansregular';
+	color: #626262;
+	font-size:	12px;
+	width: 100%;
+	height: 100%;
+}
+.oslight {
+	font-family: 'open_sanslight';
+}
+.osbold {
+	font-family: 'open_sansbold';
+}
+.ossemibo {
+	font-family: 'open_sanssemibold';
+}
+.tshad {
+	text-shadow: 2px 0px 3px rgba(150, 150, 150, 1);
+}
+.bshad {
+	-webkit-box-shadow: #666 0px 2px 3px;
+	-moz-box-shadow: #666 0px 2px 3px;
+	box-shadow: #666 0px 2px 3px;
+}
+a {
+	color: blue;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0 0 18px
+}
+img {
+	border: none;
+	vertical-align: middle;
+}
+input {
+	vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+.clear {
+	clear:both;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 70px;
+}
+#header header {
+	position: relative;
+}
+.backhead {
+	width:100%;
+	z-index:-50;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.bkblock0n {
+	height:	514px;
+	position: absolute;
+	top: 70px;
+	background-image: url(img/bg/bkblock0n.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-top: 1px solid #e6e7e8;
+	border-bottom: 1px solid #e6e7e8;
+}
+.bkblock02 {
+	height:	604px;
+	position: absolute;
+	top: 586px;
+	background-image: url(img/bg/bkblock02.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.bkblock03 {
+	height:	1048px;
+	position: absolute;
+	top: 1481px;
+	border-top: 1px solid #e5e5e5;
+	background-image: url(img/bg/bkblock03.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.logo {
+	position: absolute;
+	top: 16px;
+	left: 10px;
+}
+.logo img{
+	width: 150px;
+	height: 40px;
+}
+#header .phone {
+	position: absolute;
+	top: 16px;
+	right: 0;
+}
+.phone {
+	font-size: 21px;
+	color: #186a96;
+	text-decoration: none;
+	text-align: right;
+}
+.description {
+	font-size: 12px;
+	color: #7b7b7b;
+	text-align: right;
+	position: absolute;
+	right: 0;
+	top: 43px;
+}
+/* ==============
+		Menu
+   ============== */
+.headernav {
+	margin: 0;
+	padding: 0;
+	width: 520px;
+	position: absolute;
+	top: 0;
+	left: 190px;
+}
+.headnav{
+	float: left;
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.headnav li{
+	float: left;
+	position: relative;
+	display: block;
+}
+.headnav li a{
+	display: block;
+	padding: 33px 19px 20px 33px;
+	margin: 0;
+	color: #7b7b7b;
+	text-decoration: none;
+	border-right: 1px solid #e7e9ea;
+}
+.headnav li:first-child a {
+	margin-left: 0;
+	border-left: 1px solid #e7e9ea;
+}
+.headnav li:last-child a {
+    margin-right: 0;
+}
+.headnav li a:hover{
+}
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+nav ul li {
+	 display: inline;
+}
+.oldie nav a {
+	margin: 0 0.7%;
+}
+/* ==============
+		End Menu
+   ============== */   
+.hiddens {
+	display: none !important;
+}
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {
+	padding: 0 0 386px;
+}
+.butnik {
+	display: block;
+	color: #ffffff;
+	border: 1px solid #71b10b;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #88bf4c;	
+}
+.butnik:hover {
+	background-color: #f88d03;
+	border: 1px solid #c96a04;
+}
+.slideblock {
+	height: 516px;
+	position: relative;
+}
+.slideblock h2 {
+	font-size: 36px;
+/* 	margin: 32px 0 0; */
+	text-align: center;
+	color: #0e6593;
+	width: 100%;
+	position: absolute;
+	top: 32px;
+}
+.slideblock h4{
+	color: #0e6593;
+	font-size: 18px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 80px;
+	z-index: 6000;
+}
+.slideblock .actionform {
+	position: absolute;
+	top: 120px;
+	right: 0;
+	z-index: 50;
+}
+.actionform, .footform {
+	width: 292px;
+	height: 346px;
+	border: 1px solid #969a9c;
+	background-color: #fff;
+	background-image: url(img/bg/actionform.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.actionform h5, .footform h5, #recall-modal-content h5 , .clickerblk h5 {
+	font-size: 38px;
+	color: #ffffff;
+	margin: 20px 0 18px;
+	text-align: center;
+}
+.actionform p, .footform p, #recall-modal-content, p .clickerblk p {
+	margin: 0 32px 26px;
+	text-align: center;
+	font-size: 16px;
+	color: #ffffff;
+}
+.actionform form, .footform form, #recall-modal-content form, .clickerblk form{
+	width: 230px;
+	margin: 0 auto;
+}
+.actionform .label, .footform .label , #recall-modal-content .label , .clickerblk .label {
+	font-size: 12px;
+	color: #3b3b3b;
+	margin: 0 0 6px;
+	display: block;
+}
+.actionform .privacy, .footform .privacy, #recall-modal-content .privacy, .clickerblk .privacy {
+	font-size: 10px;
+	color: #afafaf;
+	display: block;
+	padding: 0 0 0 30px;
+	background-image: url(img/bg/shield.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin: 8px 0;
+}
+input[type=text] {
+	font-size: 12px;
+	font-style: italic;
+/* 	color: #c4c4c4; */
+	color: #000;
+/* 	border: 1px solid #e6e7e7; */
+	border: 1px solid #ccc;
+	padding: 2px 12px;
+	width: 204px;
+	height: 30px;
+	margin: 0 auto;
+	-webkit-box-shadow: #666 0px 2px 3px;
+	-moz-box-shadow: #666 0px 2px 3px;
+	box-shadow: #666 0px 2px 3px;
+	cursor: pointer;
+}
+input[type=text]:hover {
+	-webkit-box-shadow: #666 0px 2px 10px;
+	-moz-box-shadow: #666 0px 2px 10px;
+	box-shadow: #666 0px 2px 10px;
+}
+input[type=submit] {
+	width: 228px;
+	height: 50px;
+	border: 1px solid #7ba04b;
+	-webkit-box-shadow: #666 0px 2px 3px;
+	-moz-box-shadow: #666 0px 2px 3px;
+	box-shadow: #666 0px 2px 3px;
+	background: #8fcc52;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#8fcc52), to(#91CD59));
+	background: -webkit-linear-gradient(#8fcc52, #91CD59);
+	background: -moz-linear-gradient(#8fcc52, #91CD59);
+	background: -ms-linear-gradient(#8fcc52, #91CD59);
+	background: -o-linear-gradient(#8fcc52, #91CD59);
+	background: linear-gradient(#8fcc52, #91CD59);
+	-pie-background: linear-gradient(#8fcc52, #91CD59);
+	font-size: 16px;
+	color: #ffffff;
+}
+input[type=submit]:hover {
+	border: 1px solid #c76d07;
+	background: #f59507;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f59507), to(#F49407));
+	background: -webkit-linear-gradient(#f59507, #F49407);
+	background: -moz-linear-gradient(#f59507, #F49407);
+	background: -ms-linear-gradient(#f59507, #F49407);
+	background: -o-linear-gradient(#f59507, #F49407);
+	background: linear-gradient(#f59507, #F49407);
+	-pie-background: linear-gradient(#f59507, #F49407);
+}
+
+.choiseblock h4{
+	font-size: 24px;
+	color: #3b3b3b;
+	text-align: center;
+	margin: 50px 0 5px;
+}
+.choiseblock h6{
+	font-size: 18px;
+	color: #3b3b3b;
+	text-align: center;
+	margin: 0 0 50px;
+}
+.choiseblock .choz{
+	width: 100%;
+	padding: 0 0 60px;
+}
+.choiseblock aside{
+	width: 288px;
+	height: 620px;
+	padding: 0 0 20px;
+	display: inline-block;
+	float: left;
+	margin: 0 22px;
+	border: 1px solid #e4e4e5;
+	position: relative;
+}
+.choiseblock aside:first-child{
+	margin-right: 0;
+}
+.choiseblock aside:last-child{
+	margin-left: 0;
+}
+.choiseblock aside span{
+	width: 288px;
+	height: 196px;
+	display: block;
+	box-shadow: inset 0px 0px 5px rgba(255,255,255,1);
+	margin: 0 0 20px;
+}
+.choiseblock aside img{
+	width: 288px;
+	height: 196px;
+}
+.choiseblock h5 {
+	font-size: 18px;
+	color: #3b3b3b;
+	margin: 0 50px 25px;
+	text-align: center;
+}
+.choiseblock aside:last-child h5{
+	margin: 0 35px 25px;
+}
+.choiseblock ul {
+	margin: 0 20px;
+}
+.choiseblock ul li{
+	padding: 0 0 0 15px;
+	margin: 0 0 25px;
+	background-image: url(img/bg/choiseblock.png);
+	background-repeat: no-repeat;
+	background-position: left 5px;
+}
+.choiseblock .button {
+	width: 258px;
+	height: 54px;
+	padding: 4px 0 0;
+	position: absolute;
+	bottom: 20px;
+	right: 15px;
+}
+.problems {
+
+}
+.problems aside{
+	display: inline-block;
+	width: 410px;
+	float: left;
+	padding: 60px 0;
+}
+.problems .whatproblem {
+	padding-right: 70px;
+}
+.problems .solutions {
+	padding-left: 70px;
+}
+.problems h5 {
+	font-size: 38px;
+	margin: 0;
+}
+.problems .whatproblem h5{
+	color: #e03939;
+}
+.problems .solutions h5{
+	color: #0b83c2;
+}
+.problems h6 {
+	font-size: 16px;
+	color: #7b7b7b;
+	width: 100%;
+	padding: 0 0 27px;
+	border-bottom: 1px solid #dee2e3;
+}
+.problems ul{
+	width: 100%;
+	padding: 25px 0 0;
+}
+.problems li {
+	padding: 0 0 0 70px;
+	margin: 0;
+	height: 100px;
+	font-size: 14px;
+	color: #7b7b7b;
+	background-repeat: no-repeat;
+	background-position: 16px 2px;
+}
+.problems .whatproblem li {
+	background-image: url(img/bg/whatproblem.png);
+}
+.problems .solutions li {
+	background-image: url(img/bg/solutions.png);
+}
+.problems .whatproblem .list1 {
+	padding-top: 10px;
+	height: 90px;
+}
+.problems .whatproblem .list2 {
+	padding-top: 5px;
+	height: 95px;
+}
+.problems .whatproblem .list3 {
+	padding-top: 10px;
+	height: 90px;
+}
+.problems .whatproblem .list4 {
+	padding-top: 5px;
+	height: 95px;
+}
+.problems .whatproblem .list5 {
+	padding-top: 5px;
+	height: 95px;
+}
+.action {
+	padding: 60px 0 80px;
+	position: relative;
+	
+}
+.action h5 {
+	width: 650px;
+	margin: 0 0 15px;
+	color: #17648d;
+	font-size: 48px;
+}
+.action p {
+	width: 650px;
+	color: #17648d;
+	font-size: 18px;
+	margin: 0;
+}
+.action .actionform {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	background-image: none;
+	height: 174px;
+	padding-top: 20px;
+}
+.whyweare {
+	padding: 60px 0 15px;
+}
+.whyweare h4{
+	font-size: 38px;
+	text-align: center;
+	color: #3b3b3b;
+	background-image: url(img/bg/whyweare.png);
+	background-repeat: no-repeat;
+	background-position: 60px center;
+}
+.whyweare h6{
+	font-size: 18px;
+	text-align: center;
+	color: #000;
+}
+.whyweare ul{
+	width: 100%;
+}
+.whyweare li{
+	width: 290px;
+	height: 140px;
+	padding: 70px 30px 0 160px;
+	display: inline-block;
+	float: left;
+	border-bottom: 1px solid #f4f4f4;
+	background-repeat: no-repeat;
+	background-position: 0 center;
+}
+.whyweare .reason1 {
+	background-image: url(img/bg/reason1.png);
+}
+.whyweare .reason2 {
+	background-image: url(img/bg/reason2.png);
+}
+.whyweare .reason3 {
+	background-image: url(img/bg/reason3.png);
+}
+.whyweare .reason4 {
+	background-image: url(img/bg/reason4.png);
+}
+.whyweare .reason5 {
+	background-image: url(img/bg/reason5.png);
+}
+.whyweare .reason6 {
+	background-image: url(img/bg/reason6.png);
+}
+.whyweare .reason7 {
+	background-image: url(img/bg/reason7.png);
+}
+.whyweare .reason8 {
+	background-image: url(img/bg/reason8.png);
+}
+.whyweare .reason9 {
+	background-image: url(img/bg/reason9.png);
+}
+.whyweare .reason10 {
+	background-image: url(img/bg/reason10.png);
+}
+.whyweare li h5{
+	color: #1f1f1f;
+	font-size: 18px;
+}
+.whyweare li p{
+	margin: 0;
+	font-size: 12px;
+	color: #626262;
+}
+.respond {
+	padding: 60px 0;
+	display: none;
+}
+.respond h4{
+	font-size: 24px;
+	color: #2d2d2d;
+	margin: 0 0 38px;
+	text-align: center;
+}
+.respond ul{
+	width: 100%;
+}
+.respond li{
+	width: 198px;
+	height: 351px;
+	display: inline-block;
+	float: left;
+	margin: 0 20px;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccd8e3;
+}
+.respond li:first-child{
+	margin-left: 0;
+}
+.respond li:last-child{
+	margin-right: 0;
+}
+.respond li h5{
+	font-size: 16px;
+	color: #303030;
+	text-align: center;
+	margin: 20px 0 30px;
+}
+.respond li p{
+	font-size: 12px;
+	color: #626262;
+	margin: 0 18px 0 10px;
+}
+.howwework {
+		padding: 50px 0;
+}
+.howwework h4 {
+	color: #2d2d2d;
+	font-size: 24px;
+	text-align: center;
+	margin: 0 0 25px;
+}
+.howwework ul {
+	width: 100%;
+	height: 240px;
+	background-image: url(img/bg/howwework.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.howwework li {
+	display: inline-block;
+	float: left;
+	width: 170px;
+	height: 70px;
+	padding: 150px 0 0;
+	margin: 0 13px;
+	text-align: center;
+}
+.howwework li:first-child {
+	margin-left: 0;
+}
+.howwework li:last-child {
+	margin-left: 15px;
+	margin-right: 0;
+	float: right;
+	position: relative;
+	right: -5px;
+}
+.howwework .etaps4 {
+	position: relative;
+	right: -15px;
+}
+.howwework li p{
+	margin: 0;
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+#mainfooter {
+	width:100%;
+	margin: -386px auto 0;
+	height: 386px;
+	position: relative;
+	background-image: url(img/bg/mainfooter.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	border-top: 1px solid #cccccc;
+}
+.prefooter {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-image: url(img/bg/prefooter.jpg);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+#footer {
+	width: 960px;
+	height:100%;
+	margin:0 auto;
+	background-image: url(img/bg/foologo.png);
+	background-repeat: no-repeat;
+	background-position: 10px 310px;
+}
+#footer .wrapper{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+#footer h5{
+	font-size: 32px;
+	color: #17648d;
+	width: 610px;
+	background-image: url(img/bg/footerh6.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	position: absolute;
+	left: 0;
+	top: 110px;
+}
+#footer .copy {
+	font-size: 12px;
+	margin: 0;
+	width: 230px;
+	color: #cfcfcf;
+	position: absolute;
+	left: 215px;
+	bottom: 35px;
+}
+#footer .phone {
+	position: absolute;
+	right: 160px;
+	bottom: 55px;
+	color: #0b83c2;
+	font-size: 21px;
+}
+.foodescr {
+	width: 250px;
+	text-align: right;
+	position: absolute;
+	right: 160px;
+	bottom: 35px;
+	font-size: 12px;
+	color: #e8e8e8;
+}
+.recall {
+	font-size: 12px;
+	padding: 12px 0;
+	width: 140px;
+	position: absolute;
+	right: 0;
+	bottom: 35px;
+}
+.footform {
+	position: absolute;
+	top: 45px;
+	right: 0;
+	background-image: none;
+	height: 174px;
+	padding-top: 20px;
+}
+/* image align
+-----------------------------------------------------------------------------*/
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+ 
+.alignleft {
+   float: left;
+}
+ 
+.alignright {
+   float: right;
+}
+ 
+.wp-caption {
+   border: 1px solid #ddd;
+   text-align: center;
+   background-color: #f3f3f3;
+   padding-top: 4px;
+   margin: 10px;
+   /* optional rounded corners for browsers that support it */
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+}
+ 
+.wp-caption img {
+   margin: 0;
+   padding: 0;
+   border: 0 none;
+}
+ 
+.wp-caption p.wp-caption-text {
+   font-size: 11px;
+   line-height: 17px;
+   padding: 0 4px 5px;
+   margin: 0;
+}
+/*
+Для красоты к строкам:
+*/
+.alignleft {
+   float: left;
+}
+ 
+.alignright {
+   float: right;
+}
+/*
+Можно добавить еще параметр margin для того, чтобы сделать автоматический отступ между картинкой и текстом, в результате этот кусок кода будет выглядеть вот так:
+*/
+
+.alignleft {
+   float: left;
+   margin-right: 5px;
+}
+ 
+.alignright {
+   float: right;
+   margin-left: 5px;
+}
+
+/* end of image align */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
